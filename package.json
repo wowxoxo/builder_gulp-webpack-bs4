@@ -38,6 +38,6 @@
     "webpack-stream": "^4.0.1"
   },
   "dependencies": {
-    "bootstrap": "4.0.0"
+    "bootstrap": "4.4.1"
   }
 }
