@@ -1,0 +1,198 @@
+body
+    line-height: 1.5
+    font-size: 16px
+    font-family: 'Circe', sans-serif
+    color: $color-black-2
+    line-height: 1.25
+    margin: 0
+
+
+h1, h2, h3, h4, h5, h6
+    font-size-adjust: 0.5
+
+@media (min-width: 43.75em)
+    body
+        line-height: 1.375
+
+    h1
+        font-size: 2em
+        line-height: 1.25
+        font-weight: 400
+
+@media (min-width: 43.75em)
+    h1
+        font-size: 2.5em
+        line-height: 1.125
+
+@media (min-width: 56.25em)
+    h1
+        font-size: 3em
+        line-height: 1.05
+
+    h2
+        font-size: 1.625em
+        line-height: 1.15384615
+        font-weight: 400
+
+@media (min-width: 43.75em)
+    h2
+        font-size: 2em
+        line-height: 1.25
+
+@media (min-width: 56.25em)
+    h2
+        font-size: 2.25em
+        line-height: 1.25
+
+    h3
+        font-size: 1.375em
+        line-height: 1.13636364
+
+@media (min-width: 43.75em)
+    h3
+        font-size: 1.5em
+        line-height: 1.25
+
+@media (min-width: 56.25em)
+    h3
+        font-size: 1.75em
+        line-height: 1.25
+
+    h4
+        font-size: 1.125em
+        line-height: 1.11111111
+
+@media (min-width: 43.75em)
+    h4
+        line-height: 1.22222222
+
+    .h1
+        font-size: 2em
+        line-height: 1.25
+
+@media (min-width: 43.75em)
+    .h1
+        font-size: 2.5em
+        line-height: 1.125
+
+@media (min-width: 56.25em)
+    .h1
+        font-size: 3em
+        line-height: 1.05
+
+    .h2
+        font-size: 1.625em
+        line-height: 1.15384615
+
+@media (min-width: 43.75em)
+    .h2
+        font-size: 2em
+        line-height: 1.25
+
+@media (min-width: 56.25em)
+    .h2
+        font-size: 2.25em
+        line-height: 1.25
+
+    .h3
+        font-size: 1.375em
+        line-height: 1.13636364
+
+@media (min-width: 43.75em)
+    .h3
+        font-size: 1.5em
+        line-height: 1.25
+
+@media (min-width: 56.25em)
+    .h3
+        font-size: 1.75em
+        line-height: 1.25
+
+    .h4
+        font-size: 1.125em
+        line-height: 1.11111111
+
+@media (min-width: 43.75em)
+    .h4
+        line-height: 1.22222222
+
+p
+    line-height: 1.5*$base-size
+
+p + p
+    padding-top: $base-indent
+
+p + ul, p + ol
+    padding-top: $base-indent
+
+ul + p, ol + p
+    padding-top: $base-indent
+
+.h3 + p, .h3 + ul, .h3 + ol, h3 + p, h3 + ul, h3 + ol
+    padding-top: $base-indent
+
+p + .h3, ul + .h3, ol + .h3, p + h3, ul + h3, ol + h3
+    padding-top: 2*$base-indent
+
+.h4 + p, .h4 + ul, .h4 + ol, h4 + p, h4 + ul, h4 + ol
+    padding-top: $base-indent
+
+p + .h4, ul + .h4, ol + .h4, p + h4, ul + h4, ol + h4
+    padding-top: 2*$base-indent
+
+h3 + h4, .h3 + .h4, h3 + .h4, .h3 + h4
+    padding-top: 1.5*$base-indent
+
+.small-text
+    // font-size: $font-small
+    // color: $color-black-2-op6
+    line-height: 1.25*$base-size
+    margin: 0
+    padding: 0
+
+a
+    color: $color-primary
+
+    &:hover
+        color: $color-primary
+        text-decoration: underline
+
+.ul-list
+    li
+        list-style-type: square
+        margin-left: 1*$base-indent
+        line-height: 1.5*$base-size
+        padding-bottom: 0.25*$base-indent
+
+// @media (min-width: $media-0)
+//     .ul-list, .ol-list, .ol-list_v
+//         padding-left: 0px
+//
+// @media (min-width: $media-sm)
+//     .ul-list, .ol-list, .ol-list_v
+//         padding-left: 40px
+
+.ol-list
+    li
+        list-style-type: decimal
+        margin-left: 1*$base-indent
+        line-height: 1.5*$base-size
+        padding-bottom: 0.25*$base-indent
+
+.ol-list_v
+    li + li
+        margin-top: $base-indent
+
+.ul-list-none
+    li
+        list-style-type: none
+        margin-left: 0
+        padding-bottom: 0
+
+.ul-list-no-bullet
+    li
+        list-style-type: none
+        margin-left: 0
+
+h1.h_no-top, h2.h_no-top, h3.h_no-top, h4.h_no-top, h5.h_no-top, h6.h_no-top
+    margin-top: 0

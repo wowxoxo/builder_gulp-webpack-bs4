@@ -1,0 +1,29 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.1.0] - 2017-03-07
+### Added
+- created gulp and webpack tasks
+- created readme.md
+- bootstrap source code + scripts for compiling + readme instruction
+- mixins for svg icons
+- Circe font
+
+## [0.1.4] - 2017-03-30
+### Added
+- gulp tasks for simple images
+## Edited
+- gitignore
+- sass-lint
+- unification variables
+
+## [0.2.0] - 2018-09-13
+### Added
+- bemto mixins
+### Edited
+- removed and commented test js

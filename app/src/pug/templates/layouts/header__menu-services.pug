@@ -1,0 +1,26 @@
+.col-sm-2.offset-sm-10.col-md-2.offset-md-0.col-lg-2.col-xl-2.col-xxl-1
+    .row
+        .col
+            .header__services
+                .header__burger.header__burger_smev
+                    .header-burger.dropdown.dropdown_burger
+                        button#dropdownBurger.button_no.header-burger__toggle(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            svg(class="icon icon-m-burger icon_size_18 icon_fill_black mixin_top_n2")
+                                use(xlink:href="/img/svg-sprite.svg#icon-m-burger")
+                        .header-burger__menu.dropdown-menu(aria-labelledby='dropdownBurger')
+                            #main-menu_burger
+                                .main-menu__burger-links
+                                    //- a.main-menu__item(href='link2.html') О компании
+                                    //- a.main-menu__item(href='link2.html') Партнерам
+                                    //- a.main-menu__item(href='link2.html') Новости
+                                    //- a.main-menu__item(href='link2.html') Вопросы-ответы
+                                    //- a.main-menu__item(href='link2.html') Контакты
+                            //- a.header-burger__item(href='#') О компании
+                            //- a.header-burger__item(href='#') Партнерам
+                            //- a.header-burger__item(href='#') Новости
+                            //- a.header-burger__item(href='#') Вопросы-ответы
+                            //- a.header-burger__item(href='#') Контакты
+                .header__search
+                    button#openSearchPanel.button_no.header-search__toggle(href='#')
+                        svg(class="icon icon-m-search icon_size_24 icon_fill_black mixin_top_n22")
+                            use(xlink:href="/img/svg-sprite.svg#icon-m-search")

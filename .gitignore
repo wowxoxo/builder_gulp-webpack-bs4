@@ -1,0 +1,12 @@
+/node_modules
+/build
+/app/css
+/app/img
+/app/js
+/app/fonts
+/app/src/img/sprites
+/app/*.html
+/app/src/libs/*
+!/app/src/libs/bootstrap.md
+!/app/src/libs/_variables.scss
+package-lock.json

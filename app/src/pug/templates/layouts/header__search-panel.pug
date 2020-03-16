@@ -1,0 +1,10 @@
++b.col-12.search-panel__#searchPanel
+    +e.box
+        +e.SPAN.icon
+            svg(class="icon icon-m-search icon_size_24 icon_fill_black")
+                use(xlink:href="/img/svg-sprite.svg#icon-m-search")
+        +e.FORM.form(method='post' action='/search')
+            +e.INPUT.input(type='text' name='search' placeholder='Поиск')
+        +b.BUTTON.button_no.__button#closeSearchPanel
+            svg(class="icon icon-close icon_size_14 icon_fill_primary-light")
+                use(xlink:href="/img/svg-sprite.svg#icon-close")

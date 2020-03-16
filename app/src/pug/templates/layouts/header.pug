@@ -1,0 +1,29 @@
++b.HEADER.header
+    +e.line_1
+        .container
+            +e.regular-content
+                .row
+                    .col-2
+                        +e.logo
+                            a(href="index.html") logo
+                    .col-4
+                        +e.city city
+                    .col-2
+                        +e.phone_1 phone 1
+                    .col-2
+                        +e.phone_2 phone 2
+                    .col-2
+                        +e.call button
+            +e.menu-grid
+                .row
+                    .col-11
+                        +e.menu
+                            +b.NAV.main-menu
+                                block header__menu
+                                    +e.A.item(href="link.html" class="main-menu__item-active") Электронная подпись
+                                    +e.A.item(href="link.html") Электронная подпись 2
+                                    +e.A.item(href="link.html") Электронная подпись 3
+                    .col
+                        +e.burger b
+                        +e.search s
+

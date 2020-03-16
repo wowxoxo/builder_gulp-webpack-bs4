@@ -1,0 +1,90 @@
++b.header__top-bar
+    .container
+        .row
+            .col-sm-10.col-md-3.col-lg-2
+                +e.logo
+                    a(href='/')
+                        img(src='/img/logo.png')
+                +e.picker
+                    +b.header-services.dropdown.dropdown_picker
+                        +e.BUTTON.toggle#dropdownPicker.button_no-out(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            svg(class="icon icon-key_arrow_down icon_size_24 icon_fill_primary")
+                                use(xlink:href="/img/svg-sprite.svg#icon-key_arrow_down")
+                        +e.menu.dropdown-menu(aria-labelledby='dropdownPicker')
+                            +e.title Все сайты:
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://iitrust.ru/')
+                                    | iitrust.ru
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Инфотекс Интернет Траст
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://uc.iitrust.ru/')
+                                    | uc.iitrust.ru
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Удостоверяющий центр
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://oid.iitrust.ru/')
+                                    | oid.iitrust.ru
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Реестр идентификаторов
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://ib.iitrust.ru/')
+                                    | ib.iitrust.ru
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Защита информации
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://iitrust.cloud/')
+                                    | iitrust.cloud
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Платформа IITCloud
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://smev.iitrust.ru/')
+                                    | smev.iitrust.ru
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Интеграция со СМЭВ
+                            +e.item
+                                +e.A.link.link(target='_blank' href='https://iitrust.lk/')
+                                    | iitrust.lk
+                                    svg(class="icon icon-external icon_size_12 icon_fill_primary")
+                                        use(xlink:href="/img/svg-sprite.svg#icon-external")
+                                +e.desc Личный кабинет
+            .col-md-3.col-lg-4.d-none.d-sm-none.d-md-none.d-lg-block
+                //- +e.city
+                //-     select.select_city(name='state')
+                //-         option(value='moscow') г. Москва
+                //-         option(value='piter') г. Санкт-Петербург
+                //-         optgroup(label='А')
+                //-             option(value='a1') Алтайский край
+                //-             option(value='a2') Амурская область
+                //-         optgroup(label='Б')
+                //-             option(value='b1') Белгородская область
+                //-             option(value='b2') Белгородская область
+                //-         optgroup(label='Я')
+                //-             option(value='b1') Ямало-ненецкий автономный округ
+                //-             option(value='b2') Ямало-ненецкий автономный округ
+                //-             option(value='b3') Ямало-ненецкий автономный округ
+                //-             option(value='b4') Ямало-ненецкий автономный округ
+                //-             option(value='b5') Ямало-ненецкий автономный округ
+                //-             option(value='b6') Ямало-ненецкий автономный округ
+                +e.city.
+                    г. Москва, Старый Петровско-Разумовский проезд, д. 1/23, стр. 1, этаж 3
+            .col-md-3.col-lg-2.d-none.d-sm-none.d-md-block
+                +b.phone.__phone_1
+                    +e.number
+                        +e.number-link 8 800 250-8-265
+                    +e.text Звонок бесплатный
+            .col-md-3.col-lg-2.d-none.d-sm-none.d-md-block
+                +b.phone.__phone_2
+                    +e.number
+                        +e.number-link 8 800 250-0-265
+                    +e.text Техподдержка 24/7
+            .col-md-3.col-lg-2.d-none.d-sm-none.d-md-block
+                +e.call
+                    //- a.button-second(href='#') Заказать звонок
+                    button.button-primary(role='button' data-toggle='modal', data-target='#modalFormOrder') Заказать&nbsp;звонок
