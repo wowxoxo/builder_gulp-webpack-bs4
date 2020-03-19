@@ -27,3 +27,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - bemto mixins
 ### Edited
 - removed and commented test js
+
+## [1.1.0] - 2020-03-19
+### Edited
+- regress version for some packages in package.json
+- fix gulpfile
+- upd readme
