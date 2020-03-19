@@ -9,4 +9,3 @@
 /app/src/libs/*
 !/app/src/libs/bootstrap.md
 !/app/src/libs/_variables.scss
-package-lock.json
