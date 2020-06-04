@@ -6,7 +6,7 @@ Another project with Gulp, Webpack and Bootstrap 4 grid.
 
 ## System requirements
 
-- [Node.js](https://nodejs.org)
+- [Node.js v12](https://nodejs.org)
 
 ## Clone repository an init project
 
@@ -111,7 +111,7 @@ npm run build
     Run command in Git Bash from root folder of project
 
     ```Bash
-    gulp bootstrap-ruby
+    gulp bsRuby
     ```
 
 11. Done!
