@@ -2,7 +2,7 @@
 const path = {
   src: {
     sass: "app/src/sass/",
-    node: "node_modules/"
+    node: "node_modules"
   }
 };
 

@@ -6,7 +6,7 @@ Another project with Gulp, Webpack and Bootstrap 4 grid.
 
 ## System requirements
 
-- [Node.js v12](https://nodejs.org)
+- [Node.js v10](https://nodejs.org)
 
 ## Clone repository an init project
 

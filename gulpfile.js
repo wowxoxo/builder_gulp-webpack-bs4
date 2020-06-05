@@ -35,14 +35,17 @@
       img: "app/src/img",
       spritesAss: "app/src/img/sprites-assets",
       sprites: "app/src/img/sprites",
-      fonts: "app/src/fonts"
+      fonts: "app/src/fonts",
+      libs: "app/src/libs",
+      root: "app/src/root"
     },
     dest: {
       css: "app/css",
       js: "app/js",
       pug: "app",
       img: "app/img",
-      fonts: "app/fonts"
+      fonts: "app/fonts",
+      root: "app"
     },
     build: "build"
   };
@@ -285,6 +288,17 @@
       );
   };
 
+  const rootFiles = () => {
+    return gulp
+      .src(path.src.root + "/*.*")
+      .pipe(gulp.dest(path.dest.root))
+      .pipe(
+        browserSync.reload({
+          stream: true
+        })
+      );
+  };
+
   const spriteImgStyles = () => {
     return gulp
       .src(path.src.sprites + "/img/img-sprite.sass")
@@ -302,6 +316,7 @@
     gulp.watch(path.src.js, scriptsDev);
     gulp.watch(path.src.fonts, fonts);
     gulp.watch(path.src.img + "/*.*", justImg);
+    gulp.watch(path.src.root + "/*.*", rootFiles);
   };
 
   const watchPhp = () => {
@@ -313,6 +328,7 @@
     gulp.watch(path.src.js, scriptsDev);
     gulp.watch(path.src.fonts, fonts);
     gulp.watch(path.src.img + "/*.*", justImg);
+    gulp.watch(path.src.root + "/*.*", rootFiles);
 
     gulp.watch("app/**/*.php", browserSync.reload);
   };
@@ -344,7 +360,7 @@
       .src("app/js/**/*.js")
       .pipe(gulp.dest(path.build + "/js"));
 
-    const buildHtml = gulp.src("app/*.html").pipe(gulp.dest(path.build));
+    const buildRootFiles = gulp.src("app/*.*").pipe(gulp.dest(path.build));
 
     const buildAllImages = gulp
       .src("app/img/*.*")
@@ -392,6 +408,7 @@
     bootstrap,
     fonts,
     justImg,
+    rootFiles,
     stylesLibsDev,
     stylesDev,
     scriptsLibs,
@@ -407,6 +424,7 @@
     bootstrap,
     fonts,
     justImg,
+    rootFiles,
     stylesLibsBuild,
     stylesBuild,
     scriptsLibs,
@@ -422,6 +440,7 @@
     bootstrap,
     fonts,
     justImg,
+    rootFiles,
     stylesLibsDev,
     stylesDev,
     scriptsLibs,
