@@ -1,6 +1,6 @@
 {
   "name": "builder_gulp-webpack-bs4",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Builder with gulp, webpack and bootstrap 4 grid",
   "main": "gulpfile.js",
   "scripts": {

@@ -1,6 +1,6 @@
 # builder_gulp-webpack-bs4
 
-[![Generic badge](https://img.shields.io/badge/version-2.0.0-<COLOR>.svg)](https://github.com/wowxoxo/builder_gulp-webpack-bs4)
+[![Generic badge](https://img.shields.io/badge/version-2.2.0-<COLOR>.svg)](https://github.com/wowxoxo/builder_gulp-webpack-bs4)
 
 Another project with Gulp, Webpack and Bootstrap 4 grid.
 
