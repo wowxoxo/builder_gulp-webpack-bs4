@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - rewrite to webpack
 - add CLI version ?
 - test it with google insigths and fix the problems
+- Generator for favicons (dev.mrp as example)
 
 ## [Unreleased]
 
